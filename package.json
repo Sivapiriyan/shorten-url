@@ -1,7 +1,7 @@
 {
     "name": "shorten-url-app",
     "version": "0.1.0",
-    "homepage": "https://sivapiriyan.github.io/shorten-url",
+    "homepage": "https://Sivapiriyan.github.io/shorten-url",
     "private": true,
     "dependencies": {
         "@emotion/react": "^11.11.1",
@@ -19,6 +19,7 @@
         "axios": "^1.6.2",
         "http-proxy-middleware": "^2.0.6",
         "react": "^18.2.0",
+        "react-copy-to-clipboard": "^5.1.0",
         "react-dom": "^18.2.0",
         "react-scripts": "5.0.1",
         "typescript": "^4.9.5",
@@ -55,6 +56,7 @@
     },
     "devDependencies": {
         "@mui/types": "^7.2.9",
+        "@types/react-copy-to-clipboard": "^5.0.7",
         "eslint": "^8.54.0",
         "eslint-config-prettier": "^9.0.0",
         "eslint-plugin-prettier": "^5.0.1",

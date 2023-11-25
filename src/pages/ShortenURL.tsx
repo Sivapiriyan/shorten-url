@@ -10,8 +10,10 @@ function ShortenURL() {
     const [url, seturl] = useState('')
     const [urlError, seturlError] = useState('')
     const [shortenUrl, setshortenUrl] = useState('')
+    const [loading, setloading] = useState(false)
 
     const getValidShortenURL = async (url: string) => {
+        setloading(true)
         await getShortenUrl(url).then(
             (response: string) => {
                 console.log('response', response)
@@ -21,6 +23,7 @@ function ShortenURL() {
                 console.log('error', err)
             }
         )
+        setloading(false)
     }
 
     return (
@@ -46,6 +49,7 @@ function ShortenURL() {
                             } else {
                                 seturlError('')
                             }
+                            setshortenUrl('')
                             seturl(event.target.value)
                         }}
                         error={urlError !== ''}
@@ -59,15 +63,17 @@ function ShortenURL() {
                         fullWidth
                         disabled={url === '' || urlError !== ''}
                         onClick={() => getValidShortenURL(url)}
+                        loading={loading}
                     >
                         Get Short URL
                     </Button>
                 </Grid>
             </Grid>
-
-            <Grid className="urlDisplayerConatiner">
-                <URLDisplayer url={shortenUrl} />
-            </Grid>
+            {shortenUrl !== '' && (
+                <Grid className="urlDisplayerConatiner">
+                    <URLDisplayer url={shortenUrl} />
+                </Grid>
+            )}
         </div>
     )
 }
