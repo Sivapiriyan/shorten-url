@@ -1,6 +1,7 @@
 {
     "name": "shorten-url-app",
     "version": "0.1.0",
+    "homepage": "https://sivapiriyan.github.io/shorten-url",
     "private": true,
     "dependencies": {
         "@emotion/react": "^11.11.1",
@@ -30,7 +31,9 @@
         "eject": "react-scripts eject",
         "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\"",
         "lint:fix": "eslint --fix \"src/**/*.{js,jsx,ts,tsx}\"",
-        "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,css,md}\" --config ./.prettierrc.json"
+        "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,css,md}\" --config ./.prettierrc.json",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build"
     },
     "eslintConfig": {
         "extends": [
@@ -56,6 +59,7 @@
         "eslint-config-prettier": "^9.0.0",
         "eslint-plugin-prettier": "^5.0.1",
         "eslint-plugin-react-hooks": "^4.6.0",
+        "gh-pages": "^6.1.0",
         "prettier": "^3.1.0"
     }
 }
