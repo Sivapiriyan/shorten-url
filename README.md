@@ -35,15 +35,15 @@ Before you begin, make sure you have the latest versions of Node.js and npm inst
 ```
 -   To run the app locally, clone the repository
 
-    git clone https://github.com/Sivapiriyan/shorten-url.git
+     git clone https://github.com/Sivapiriyan/shorten-url.git
 
 -   Install the dependencies
     you must have lasteset node and npm veriosn
 
-    ### npm i
+    npm i
 
 -   Run the application
 
-    ### npm start
+    npm start
 
 ```
