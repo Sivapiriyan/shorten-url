@@ -1,0 +1,11 @@
+.headerContainer {
+    justify-content: space-between;
+    align-items: center;
+}
+.urlContainer {
+    padding-inline: 16px;
+}
+
+.shortenUrl {
+    line-break: anywhere;
+}

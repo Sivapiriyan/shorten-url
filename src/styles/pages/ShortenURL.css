@@ -1,0 +1,47 @@
+.title {
+    font-weight: 500 !important;
+    padding-top: 8%;
+}
+.inputAndBtnConatiner {
+    width: 80% !important;
+    margin: auto;
+    margin-top: 5%;
+    justify-content: space-between;
+}
+.inputConatiner {
+    width: 79%;
+}
+.btnConatiner {
+    width: 20%;
+}
+
+.buttonStyle {
+    height: 55px;
+}
+.urlDisplayerConatiner {
+    width: 80% !important;
+    margin: auto;
+    margin-top: 3%;
+}
+
+@media (max-width: 768px) {
+    .inputAndBtnConatiner {
+        width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    .inputConatiner {
+        width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    .btnConatiner {
+        width: 100%;
+        padding-top: 15px;
+    }
+}
+@media (max-width: 768px) {
+    .urlDisplayerConatiner {
+        width: 100%;
+    }
+}
