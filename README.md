@@ -32,9 +32,10 @@ Visit the live demo [here](https://sivapiriyan.github.io/shorten-url/) to experi
 
 Before you begin, make sure you have the latest versions of Node.js and npm installed on your machine
 
+```
 -   To run the app locally, clone the repository
 
-    ### git clone https://github.com/Sivapiriyan/shorten-url.git
+    git clone https://github.com/Sivapiriyan/shorten-url.git
 
 -   Install the dependencies
     you must have lasteset node and npm veriosn
@@ -44,7 +45,5 @@ Before you begin, make sure you have the latest versions of Node.js and npm inst
 -   Run the application
 
     ### npm start
-
-```
 
 ```
