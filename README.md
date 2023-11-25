@@ -1,46 +1,50 @@
-# Getting Started with Create React App
+# shorten-url-app
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+The Shorten URL App is a web application designed to simplify and shorten long URLs, making them more manageable and easier to share. With an intuitive user interface built using React, Typescript and Material-UI, users can quickly generate shortened URLs with just a few clicks.
 
-In the project directory, you can run:
+## Key Features
 
-### `npm start`
+-   User-Friendly Interface: The app provides a seamless experience for users to shorten URLs effortlessly.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+-   Clipboard Integration: Easily copy the shortened URL to the clipboard with the click of a button, streamlining the sharing process.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+-   Notification: Leveraging Notistack, the app displays unobtrusive notifications, keeping users informed about the status of their URL shortening actions.
 
-### `npm test`
+## Technologies Used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The app utilizes cutting-edge technologies, including:
 
-### `npm run build`
+-   React: A powerful JavaScript library for building user interfaces.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+-   Material-UI: A React UI framework that implements Google's Material Design principles.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+-   Axios: A promise-based HTTP client for making requests to the server.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+-   Notistack: A notification library for React, enhancing the user experience with non-intrusive alerts.
 
-### `npm run eject`
+## Try It Out
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Visit the live demo [here](https://sivapiriyan.github.io/shorten-url/) to experience the convenience of the Shorten URL App firsthand.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Try In Local
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Before you begin, make sure you have the latest versions of Node.js and npm installed on your machine
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+-   To run the app locally, clone the repository
 
-## Learn More
+    ### git clone https://github.com/Sivapiriyan/shorten-url.git
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+-   Install the dependencies
+    you must have lasteset node and npm veriosn
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    ### npm i
+
+-   Run the application
+
+    ### npm start
+
+```
+
+```
