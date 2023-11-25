@@ -6,11 +6,15 @@ import '@fontsource/roboto/500.css'
 import '@fontsource/roboto/700.css'
 import { ShortenURL } from './pages'
 
+import { SnackbarProvider } from 'notistack'
+
 function App() {
     return (
-        <div className="App">
-            <ShortenURL />
-        </div>
+        <SnackbarProvider>
+            <div className="App">
+                <ShortenURL />
+            </div>
+        </SnackbarProvider>
     )
 }
 

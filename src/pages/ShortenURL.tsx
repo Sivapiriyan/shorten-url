@@ -5,6 +5,7 @@ import '../styles/pages/ShortenURL.css'
 import { useState } from 'react'
 import { ValidateURL } from '../utils/validations'
 import { getShortenUrl } from '../services/shortenUrl.service'
+import { useSnackbar } from 'notistack'
 
 function ShortenURL() {
     const [url, seturl] = useState('')
@@ -12,15 +13,25 @@ function ShortenURL() {
     const [shortenUrl, setshortenUrl] = useState('')
     const [loading, setloading] = useState(false)
 
+    const { enqueueSnackbar } = useSnackbar()
+
     const getValidShortenURL = async (url: string) => {
         setloading(true)
         await getShortenUrl(url).then(
             (response: string) => {
-                console.log('response', response)
                 setshortenUrl(response)
+                enqueueSnackbar('URL shortened Successfully!', {
+                    variant: 'success',
+                    anchorOrigin: { horizontal: 'center', vertical: 'top' },
+                    key: '1',
+                })
             },
-            (err: any) => {
-                console.log('error', err)
+            (error: any) => {
+                enqueueSnackbar('Something went wrong..!', {
+                    variant: 'error',
+                    anchorOrigin: { horizontal: 'center', vertical: 'top' },
+                    key: '1',
+                })
             }
         )
         setloading(false)
